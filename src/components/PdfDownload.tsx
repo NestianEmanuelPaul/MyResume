@@ -1,5 +1,6 @@
 "use client";
-import { PDFDownloadLink, Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
+import dynamic from "next/dynamic";
+import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
 import { cvData } from "@/lib/cv-data";
 
 const styles = StyleSheet.create({
@@ -10,6 +11,11 @@ const styles = StyleSheet.create({
   card: { marginBottom: 8, paddingBottom: 6, borderBottom: 1, borderColor: "#ddd" },
   small: { color: "#666" },
 });
+
+const PDFDownloadLink = dynamic(
+  () => import("@react-pdf/renderer").then(mod => mod.PDFDownloadLink),
+  { ssr: false }
+);
 
 function CVDocument() {
   const p = cvData.profile;

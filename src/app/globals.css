@@ -1,10 +1,10 @@
 @import "tailwindcss/preflight";
-@import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 :root {
   --accent: #10b981; /* emerald */
 }
+
 
 /* @theme inline {
   --color-background: var(--background);

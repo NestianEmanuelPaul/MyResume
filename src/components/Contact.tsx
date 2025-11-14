@@ -53,7 +53,7 @@ export default function Contact() {
         <input {...register("phone")} placeholder="Telefon (opțional)" className="w-full rounded-md bg-neutral-900 border-neutral-800" />
         <textarea {...register("message")} placeholder="Mesaj" rows={5} className="w-full rounded-md bg-neutral-900 border-neutral-800" />
         {errors.message && <p className="text-red-400 text-sm">{errors.message.message}</p>}
-        <button disabled={isSubmitting} className="px-4 py-2 bg-[var(--accent)] text-black rounded-lg hover:opacity-90">
+        <button disabled={isSubmitting} className="px-4 py-2 bg-(--accent) text-black rounded-lg hover:opacity-90">
           {isSubmitting ? "Se trimite..." : "Trimite mesaj"}
         </button>
         {isSubmitSuccessful && <p className="text-emerald-400">Mesaj trimis. Mulțumesc!</p>}

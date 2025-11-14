@@ -6,19 +6,20 @@ import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
-import PdfDownload from "@/components/PdfDownload";
+import PrintCV from "@/components/PrintCV";
 
 export default function Page() {
   return (
     <Layout>
-      <Hero />
-      <Stats />
-      <Experience />
-      <Education />
-      <Skills />
-      <Projects />
-      <PdfDownload />
-      <Contact />
+      <PrintCV>
+        <Hero />
+        <Stats />
+        <Experience />
+        <Education />
+        <Skills />
+        <Projects />
+        <Contact />
+      </PrintCV>
     </Layout>
   );
 }

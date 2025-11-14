@@ -14,10 +14,10 @@ export default function Projects() {
                   <div className="font-medium">{p.title}</div>
                   <div className="text-sm text-neutral-400">{p.desc}</div>
                 </div>
-                <span className="text-[var(--accent)] opacity-0 group-hover:opacity-100 transition">→</span>
+                <span className="text-(--accent) opacity-0 group-hover:opacity-100 transition">→</span>
               </div>
             </div>
-            <div className="h-1 bg-neutral-800 group-hover:bg-[var(--accent)] transition" />
+            <div className="h-1 bg-neutral-800 group-hover:bg-(--accent) transition" />
           </a>
         ))}
       </div>
