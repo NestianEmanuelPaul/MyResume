@@ -11,10 +11,10 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="rounded-lg px-3 py-2 ring-1 ring-neutral-700 bg-neutral-900 text-neutral-200 hover:bg-neutral-800"
-      aria-label="Toggle dark mode"
+      className="rounded-lg px-3 py-2 border border-neutral-800 bg-neutral-900 text-neutral-200 hover:bg-neutral-800 transition"
+      aria-label="Toggle theme"
     >
-      {theme === "dark" ? "Light mode" : "Dark mode"}
+      {theme === "dark" ? "Light" : "Dark"}
     </button>
   );
 }

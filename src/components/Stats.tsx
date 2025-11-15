@@ -1,21 +1,16 @@
 // src/components/Stats.tsx
-export default function Stats() {
-  const items = [
-    { label: "Ani experiență", value: "8" },
-    { label: "Companii", value: "4" },
-    { label: "Proiecte personale", value: "8" },
-    { label: "Integrări AI", value: "4" },
-  ];
+import { cvData } from "@/lib/cv-data";
 
+export default function Stats() {
   return (
-    <section className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-      {items.map((item) => (
+    <section className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8">
+      {cvData.stats.map((item) => (
         <div
           key={item.label}
-          className="rounded-xl bg-neutral-900 ring-1 ring-neutral-800 p-4 text-center"
+          className="text-center"
         >
-          <div className="text-2xl font-semibold text-emerald-400">{item.value}</div>
-          <div className="text-sm text-neutral-400 mt-1">{item.label}</div>
+          <div className="text-4xl md:text-5xl font-bold text-white mb-2">{item.value}</div>
+          <div className="text-sm text-neutral-400">{item.label}</div>
         </div>
       ))}
     </section>

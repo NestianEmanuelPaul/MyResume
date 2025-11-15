@@ -7,6 +7,13 @@ export const cvData = {
     phone: "+40764365654",
     available: true,
     videoSrc: "/profile.mp4", // îl pui în /public
+    social: {
+      instagram: "#",
+      twitter: "#",
+      youtube: "https://www.youtube.com/@emanuelnestian",
+      dribbble: "#",
+      behance: "#",
+    },
   },
   stats: [
     { label: "Ani experiență", value: "3+" },
